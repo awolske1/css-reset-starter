@@ -3,7 +3,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -79,6 +78,18 @@ header, main, footer{
     width: calc(1000px - 2rem);
     margin: 0 auto;
     background-color: var(--white);
+}
+
+/* h1 styling that CSS Reset overrides without a dedicated h1 style */
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
 }
 
 /* Shared header and footer styles */
@@ -259,6 +270,24 @@ textarea{
 #my-submit:hover{
     background-color: var(--coral);
     color: var(--dk-gray);
+}
+
+/* Image and caption positioning */
+figure {
+    width: fit-content;
+    margin: 1rem auto;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+figcaption {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: left;
 }
 
 /* Code Styles */
